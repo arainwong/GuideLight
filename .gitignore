@@ -1,0 +1,60 @@
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Local environments and editor settings
+.venv/
+venv/
+.env
+.vscode/
+.idea/
+
+# OS metadata and backup files
+.DS_Store
+__MACOSX/
+*.orig
+*~
+
+# Logs and experiment tracking
+*.log
+nohup.out
+logs/
+sumo_logs/
+runs/
+wandb/
+**/eval_logs/
+
+# Generated analyses and evaluation records
+**/analysis_plots/
+sumo_files/scenarios/**/*.csv
+sumo_files/scenarios/**/*.png
+sumo_files/scenarios/**/*.pkl
+sumo_files/scenarios/**/*output.xml
+sumo_files/scenarios/**/*_out.xml
+
+# Datasets and archives. Scenario scripts (*.py and *.sh) remain trackable.
+*.zip
+data/
+dataset/
+datasets/
+sumo_files/scenarios/**/*.xml
+sumo_files/scenarios/**/*.rou.xml
+sumo_files/scenarios/**/*.flows.xml
+sumo_files/scenarios/**/*.net.xml
+sumo_files/scenarios/**/*.sumocfg
+sumo_files/scenarios/**/*.add.xml
+sumo_files/scenarios/**/*.turns.xml
+
+# Training checkpoints not selected for publication
+tsc/test/
+
+# Published evaluation checkpoints are intentionally included
+!tsc/eval_models/
+!tsc/eval_models/**
